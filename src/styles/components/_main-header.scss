@@ -1,0 +1,19 @@
+.main-header{
+    @include mainLayout;
+    display: flex;
+    justify-content: space-between;
+    height: 115px;
+    align-items: flex-end;
+  nav{
+      font-family: raleway-reg;
+      display: flex;
+      &>*{
+          font-size: 14px;
+          margin-left: 55px;
+          &:hover{
+              cursor: pointer;
+              text-decoration: underline;
+          }
+      }
+  }
+}

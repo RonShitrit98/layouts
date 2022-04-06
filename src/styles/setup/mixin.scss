@@ -1,0 +1,22 @@
+@mixin mainLayout {
+    max-width: 90vw;
+    margin: auto;
+}
+
+@mixin mainBtn{
+    background-color: aqua;
+    height: 56px;
+    background-image: linear-gradient(to right,  $btnClr1, $btnClr2, $btnClr2, $btnClr1);
+    background-size: 300% 100%;
+    border-radius: 30px;
+    border: none;
+    font-family: raleway-bold;
+    font-size: 16px;
+    color: white;
+    transition: all .4s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        background-position: 100% 0;
+       
+    }
+}

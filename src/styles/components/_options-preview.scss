@@ -1,0 +1,42 @@
+.options-prev {
+  margin-top: 90px;
+  background-color: $MainBcgClr2;
+  display: flex;
+  .prev-card-container {
+    @include mainLayout;
+    display: grid;
+    grid-template: 1fr/378px 378px;
+    column-gap: 70px;
+    row-gap: 95px;
+    margin-top: 170px;
+
+    .prev-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h3 {
+        margin-top: 38px;
+        font-family: raleway-bold;
+        font-size: 20px;
+      }
+      p {
+        margin: 0px;
+        margin: 7px 0 0 0;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .options-prev {
+    .prev-card-container {
+        max-width: 378px;
+    //   background-color: aqua;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

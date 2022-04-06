@@ -1,0 +1,18 @@
+// body{
+//     background-color: aqua;
+// }
+
+//SETUP
+@import './setup/vars';
+@import './setup/typography.scss';
+@import './setup/mixin.scss';
+
+//BASE
+@import './base/basic.scss';
+
+//COMPONENTS
+@import './components/main-header';
+@import './components/main-intro';
+@import './components/options-preview';
+@import './components/main-description';
+@import './components/main-review';

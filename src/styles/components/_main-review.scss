@@ -1,0 +1,59 @@
+.main-review {
+  background-color: $MainBcgClr2;
+  padding: 170px 0 357px 0px;
+  .review-container {
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 40px;
+    }
+
+    .review-card {
+      width: 360px;
+      height: 200px;
+      background-color: $revClr;
+      //   padding-top: 20px;
+      padding: 20px 20px 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .user-details {
+        display: flex;
+        align-items: center;
+        .user {
+          h1 {
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 0px;
+          }
+          span {
+            font-size: 8px;
+            margin: 0px;
+          }
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          margin-right: 8px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .main-review {
+    .review-container {
+      flex-direction: column;
+      align-items: center;
+      &>*:not(:first-child) {
+          margin: 0px;
+      }
+      .review-card{
+          margin-bottom: 20px;
+      }
+    }
+  }
+}
